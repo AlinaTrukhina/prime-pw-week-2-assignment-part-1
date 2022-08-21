@@ -20,7 +20,7 @@ let adventurous = true;
 let food = 'fresh crusty bread';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 1;
-pets = 5;
+//pets = 5; //tested different number of pets
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 1;
 // 11 - Add two pets to your `pets` variable
@@ -67,8 +67,10 @@ let mostPets;
 
 if (pets > friendsPets) {
     mostPets = pets;
+    console.log('I have more pets');
 } else if (friendsPets > pets) {
     mostPets = friendsPets;
+    console.log('my friend has more pets');
 } else {
     mostPets = 'pets are equal';
 }
@@ -81,7 +83,16 @@ console.log(mostPets);
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
-
+switch (luckyNumber) {
+    case 1: console.log("First is the worst");
+    break;
+    case 2: console.log("Second is the best");
+    break;
+    case 3: console.log("Third is the one with the polka dot dress");
+    break;
+    default:
+        console.log("Luck is what happens when preparation meets opportunity");
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
